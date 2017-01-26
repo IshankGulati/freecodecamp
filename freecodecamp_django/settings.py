@@ -25,7 +25,7 @@ SECRET_KEY = 'ep=xl_#t7$^9w#eth-acrqj)7!xm!yt94dx_ia*r4zxgunge1('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ishankcodecamp.herokuapp.com']
 
 APPEND_SLASH = True
 # Application definition
