@@ -6,10 +6,7 @@ from django.http import JsonResponse
 
 import datetime
 import time
-import logging
 
-
-logger = logging.getLogger('django')
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -26,11 +23,10 @@ class TimestampView(View):
         normt = None
 
         converted = False
-        logger.info(timest)
         try:
             dt = datetime.datetime.strptime(str(timest), '%B %d, %Y')
         except:
-            logger.error('Not normal date')
+            pass
         else:
             unixt = time.mktime(dt.timetuple())
             normt = dt.strftime('%B %d, %Y')
@@ -41,7 +37,7 @@ class TimestampView(View):
                 normt = datetime.datetime.utcfromtimestamp(float(timest)).strftime(
                     '%B %d, %Y')
             except:
-                logger.error('Not unix date')
+                pass
             else:
                 unixt = timest
 
