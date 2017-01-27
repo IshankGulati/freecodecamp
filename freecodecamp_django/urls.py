@@ -20,5 +20,6 @@ from freecodecamp_django.views import IndexView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^timestamp/', include('timestamp.urls')),
+    url(r'whoami/', include('reqheaderparser.urls')),
     url(r'^$', IndexView.as_view(), name='index'),
 ]

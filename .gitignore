@@ -1,2 +1,4 @@
 /logs/*
 /[\/]+#
+/.vscode
+/freecodecamp_django/local_settings.py
