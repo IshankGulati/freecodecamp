@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'freecodecamp_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'todo_mysql',
-        'USER': 'ishank',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd9aefk3652r8r3',
+        'USER': 'sfbasicwzduwdk',
+        'PASSWORD': '7a7f662d55afdf6a4a8e8c0b8330668c8fbda151dbba9f7c5cb6492dc39bd1b3',
+        'HOST': 'ec2-54-163-230-198.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
