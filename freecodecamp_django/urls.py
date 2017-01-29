@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^timestamp/', include('timestamp.urls')),
     url(r'whoami/', include('reqheaderparser.urls')),
+    url(r'img/', include('imagesearch.urls')),
     url(r'^$', IndexView.as_view(), name='index'),
 ]

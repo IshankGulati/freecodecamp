@@ -2,3 +2,6 @@
 /[\/]+#
 /.vscode
 /freecodecamp_django/local_settings.py
+/.idea
+*.pyc
+staticfiles

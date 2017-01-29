@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'timestamp',
+    'reqheaderparser',
+    'imagesearch',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +79,7 @@ WSGI_APPLICATION = 'freecodecamp_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'todo_mysql',
+        'NAME': 'freecodecamp',
         'USER': 'ishank',
         'PASSWORD': 'root',
         'HOST': 'localhost',
