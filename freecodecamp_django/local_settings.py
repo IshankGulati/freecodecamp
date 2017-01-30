@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'timestamp',
     'reqheaderparser',
     'imagesearch',
+    'filemeta',
 ]
 
 MIDDLEWARE = [
@@ -140,10 +141,14 @@ LOGGING = {
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'logs', 'django.log'),
         },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['file'],
+            'handlers': ['console'],
             'level': 'DEBUG',
             'propagate': True,
         },

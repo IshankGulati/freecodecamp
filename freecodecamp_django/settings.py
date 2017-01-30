@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'timestamp',
     'reqheaderparser',
     'imagesearch',
+    'filemeta',
 ]
 
 MIDDLEWARE = [

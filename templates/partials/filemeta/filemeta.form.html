@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="center-text">
+        <p>Submit a file to view its filesize.</p>
+    </div>
+    <form name = "form" enctype = "multipart/form-data"
+          action = "{% url "filemeta" %}" method = "POST" >{% csrf_token %}
+
+        <div class="file-form center-div">
+            <input type = "file" style = "margin-left:20%;"
+                   placeholder = "File" name = "fileupload" />
+        </div>
+
+        <br>
+
+        <div class="center-div file-form">
+            <button style = "border:0px;background-color:#4285F4; margin-top:8%;
+          height:35px; width:80%; margin-left:19%;" type = "submit" value = "Submit">
+                <strong>Submit</strong>
+            </button>
+        </div>
+    </form>
+{% endblock %}

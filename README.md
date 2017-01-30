@@ -14,3 +14,7 @@
    https://ishankcodecamp.herokuapp.com/img/imagesearch/lolcats%20funny?offset=10  
    https://ishankcodecamp.herokuapp.com/img/latest/
 
+* File metadata micro service
+
+   https://ishankcodecamp.herokuapp.com/file
+

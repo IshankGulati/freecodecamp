@@ -9,3 +9,12 @@ h1, p, h3 {
 .center-text {
 	text-align: center;
 }
+
+.file-form {
+	max-width:470px;
+}
+
+.center-div {
+	width: 50%;
+	margin: 0px auto 0px auto;
+}
